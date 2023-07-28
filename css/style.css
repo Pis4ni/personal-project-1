@@ -1,0 +1,28 @@
+/* genearls */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* navbar */
+ul{
+    list-style-type: none;
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
