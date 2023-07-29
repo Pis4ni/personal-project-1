@@ -24,7 +24,7 @@ img{
 
 
 /* navbar */
-ul{
+nav ul{
     list-style-type: none;
     margin: 0;
 }
@@ -44,16 +44,21 @@ ul{
 
 /* header */
 header{
+    background-image: url(https://picsum.photos/1900/600);
+}
+#triangle{
+    
     padding: 1em;
     background: var(--bg-nav);
     margin-bottom:1em;
     padding-bottom:3.5em;
     text-align: center;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-
+    
     display: flex;
     align-items: center;
     justify-content:center ;
+
 }
 .logo_container{
     width: 400px;
@@ -117,34 +122,9 @@ header p{
 }
 
 /* section welcome */
-.big_card_content{
-    position: relative;
-    z-index: 2;
-    background-color: var(--bg);
-}
-.big_card_content p{
-    position: relative;
-    z-index: 2;
-    height:300px ;
-    overflow: hidden;
-    max-width: 300px;
-    line-height: 2rem;
-    padding: .5rem 0 0 3rem;
-    
-}
-.shadow{
-    background-color: rgba(30,30,30,.8);
-    position: absolute;
-    z-index:2;
-    height: 301px;
-    width: 100%;
-    clip-path: polygon(0px 0px, 40% 0, 40% 100%, 0px 100%);
-}
-.img_section_bg_container{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
+/* slider */
+
 /* root */
 
 /* color */
@@ -156,14 +136,24 @@ header p{
     --gray4: #454e56;
     --gray5: #2a2e35;
     --gray6: #12181b;
+    --gray0a: #f8f8f855;
+    --gray1a: #dbe1e855;
+    --gray2a: #b2becd55;
+    --gray3a: #6c798355;
+    --gray4a: #454e5655;
+    --gray5a: #2a2e3555;
+    --gray6a: #12181b55;
     --blue: #0084a5;
     --purple: #a82dd1;
     --yellow: #fff565;
+
+    
+
 }
 /* color theme light */
 .light{
     --bg: var(--gray0);
-    --bg-nav: linear-gradient(to right, var(--gray0), var(--gray3));
+    --bg-nav: linear-gradient(to right, var(--gray0a), var(--gray3a));
     --bg-dropdown: var(--gray0);
     --text: var(--gray6);
     --border-color: var(--blue);
@@ -173,7 +163,7 @@ header p{
 /* color theme dark */
 .dark{
     --bg: var(--gray5);
-    --bg-nav:linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-nav:linear-gradient(to right, var(--gray5a), var(--gray6a));
     --bg-dropdown: var(--gray6);
     --text: var(--gray0);
     --bg-solar: var(--blue)
